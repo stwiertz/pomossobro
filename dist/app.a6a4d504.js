@@ -24596,9 +24596,9 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Box).call(this, props));
     _this.state = {
       running: false,
-      minutes: 0,
-      currenttime: 0,
-      secondes: 1,
+      minutes: 20,
+      currenttime: 20,
+      secondes: 0,
       pause: false
     };
     return _this;
@@ -24988,7 +24988,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64393" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53800" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

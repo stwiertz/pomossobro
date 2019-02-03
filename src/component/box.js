@@ -8,9 +8,9 @@ class Box extends React.Component {
         super(props);
         this.state = {
             running: false,
-            minutes: 0,
-            currenttime: 0,
-            secondes: 1,
+            minutes: 20,
+            currenttime: 20,
+            secondes: 0,
             pause: false,
         }
     }
@@ -31,7 +31,7 @@ class Box extends React.Component {
 
 
     stopAndGo() { // fonction qui fait "passer le temps" et qui l'arrete une fois a zero
-        if (!this.state.running) {
+        if (!this.state.running) { 
             this.interval = setInterval(() => {
                 if (this.state.secondes < 1) {
                     if (this.state.currenttime === 0) {
@@ -84,6 +84,8 @@ class Box extends React.Component {
 
 
                 <Button key={3} class="toggle" content={status} onClick={() => this.stopAndGo()} />
+
+
                 <Button key={4} class="btnmoin" content={[<i className="fas fa-minus"></i>]} onClick={() => this.addminutes(-1)} />
                 
             </div>
