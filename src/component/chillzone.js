@@ -67,7 +67,7 @@ class ChillZone extends React.Component {
         const strSecondes = (this.state.secondes < 10) ? ("0" + this.state.secondes) : "" + this.state.secondes;
         const strMinutes = (this.state.currenttime < 10) ? ("0" + this.state.currenttime) : "" + this.state.currenttime;
 
-        let count = <h2 className="compteur">Time to Chill ma man</h2>
+        let count = <h2 className="compteur">Time to Chill</h2>
 
         if (this.state.pause) {
             count = <Compteur key={1} class="compteur" minutes={strMinutes} secondes={strSecondes} />;
