@@ -8,7 +8,7 @@
     "build": "parcel build index.html -d docs --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://stwiertz.github.io/",
+  "homepage": "https://stwiertz.github.io/pomossobro/",
   "keywords": [],
   "author": "",
   "license": "ISC",
