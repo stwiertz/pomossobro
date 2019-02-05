@@ -50,7 +50,7 @@ class ChillZone extends React.Component {
         }
 
     }
-    
+
     breaktime(x) {
         if (!this.state.pause) {
             this.setState({
